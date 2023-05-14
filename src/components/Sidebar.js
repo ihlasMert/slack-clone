@@ -10,9 +10,12 @@ import InboxIcon from "@mui/icons-material/Inbox";
 import InsertCommentIcon from "@mui/icons-material/InsertComment";
 import AccessAlarmIcon from "@mui/icons-material/AccessAlarm";
 import EmergencyRecordingIcon from "@mui/icons-material/EmergencyRecording";
+import AddIcon from "@mui/icons-material/Add";
+
 import SideBarOption from "./SideBarOption";
 
 const Sidebar = () => {
+
   return (
     <SideBarContainer>
       <SidebarHeader>
@@ -32,6 +35,9 @@ const Sidebar = () => {
       <SideBarOption Icon={FileCopyIcon} title="file browser" />
       <SideBarOption Icon={ExpandLessIcon} title="Show less" />
       <SideBarOption Icon={AccessAlarmIcon} title="Channels" />
+      <hr />
+      <SideBarOption Icon={AddIcon} addChannelOption title="Channels" />
+      <hr />
     </SideBarContainer>
   );
 };
